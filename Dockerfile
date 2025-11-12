@@ -5,7 +5,7 @@ FROM php:8.2-apache
 WORKDIR /var/www/html
 
 # Copy your application code into the container
-COPY . /var/www/html/
+COPY . .
 
 # Install common PHP extensions (optional but useful)
 RUN docker-php-ext-install mysqli pdo pdo_mysql
